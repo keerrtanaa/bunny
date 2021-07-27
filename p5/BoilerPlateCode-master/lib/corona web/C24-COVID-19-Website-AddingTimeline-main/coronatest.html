@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="coronatest.css">
+	<title>CoronaVirus WebHelp | Testing Form</title>
+</head>
+
+	<header class="header">
+		<ul class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="timeline.html">Timeline</a></li>
+			<li><a href="coronatest.html">Corona Testing</a></li>
+		</ul>
+	</header>
+
+	<div class="form-container">
+		<div class='heading'>
+			<h1>Corona Testing Form</h1>
+		</div>
+		<div class='form'>
+			<form id="form">
+				<div class="outer">
+					<div class='left'>
+						<h2>Name</h2>
+						<h2>Profession</h2>
+						<h2>Email</h2>
+						<h2>Date of Birth</h2>
+						<h2>Mobile Number</h2>
+						<h2> State</h2>
+					</div>
+
+					<div class="right">
+						<input id="name" required name="name" type="text"><br>
+						<input id="profession" required name="profession" type="text"><br>
+						<input id="email" required name="email" type="text"><br>
+						<input id="dob" required name="dob" type="date"><br>
+						<input id="number" required name="number" type="number" pattern="[789][0-9]{9}"><br>
+						<select id="state" name="state">
+							<option disabled required selected> Choose a state</option>
+							<option>delhi</option>
+							<option>punjab</option>
+							<option>haryana</option>
+							<option>new delhi</option>
+						</select>
+					</div>
+				</div>
+				<h2 class="padding">Have you travelled to any Covid Affected Country within last 1 month</h2>
+				<input type="radio" name="option" value="Yes" checked>Yes
+				<input type="radio" name="option" value="No">No<br>
+
+				<h2 class="padding">Do You have any of the following symptoms</h2>
+				<div class="checkboxes">
+					<input type="checkbox" name="symptoms" value="Fever" id="cb1"><label for="cb1">Fever</label><br>
+					<input type="checkbox" name="symptoms" value="dry cough" id="cb2"><label for="cb2">Dry Cough</label><br>
+					<input type="checkbox" name="symptoms" value="breathing issues" id="cb3"><label for="cb3">Breathing Issues</label><br>
+					<input type="checkbox" name="symptoms" value="cold" id="cb4"><label for="cb4">Cold</label><br>
+					<input type="checkbox" name="symptoms" value="body pain" id="cb5"><label for="cb5">Body Pain</label><br>
+				</div>
+
+				<input type="submit" id="submit" value="Submit Form">
+				<h2 id="centers"> Testing Centres around you: <span id="result"></span><br>
+			</form>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.6.8/firebase.js"></script>
+
+	<script src="coronatest.js"></script>
+</body>
+
+</html>

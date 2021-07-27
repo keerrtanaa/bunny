@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: karla;
+	background: url("https://images.unsplash.com/photo-1613758947307-f3b8f5d80711?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+		no-repeat center;
+	background-size: cover;
+}
+.header {
+	padding: 20px;
+}
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style-type: none;
+}
+.menu li a {
+	font-weight: 600;
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	padding: 10px;
+}
+.menu li a:hover {
+	border-bottom: 1px solid #000;
+}
+.form-container {
+	max-width: 900px;
+	margin: 50px auto;
+	border-radius: 10px;
+}
+.heading {
+	text-align: center;
+	padding: 10px;
+	background: #053742;
+	border-radius: 10px;
+	color: #fff;
+}
+.form-container {
+	background: rgba(37, 30, 30, 0.5);
+	color: #fff;
+	padding-bottom: 20px;
+}
+.outer{
+	display:flex;
+	justify-content: space-around;
+
+}
+.left{
+	flex:1;
+	margin-left: 10px;
+}
+.right{
+	flex:2;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-top: 10px;
+}
+input{
+	padding:5px ;
+	border-radius: 5px;
+	outline:none;
+	width:50%;
+
+}
+select{
+	padding:5px;
+	border-radius:5px;
+	width:50%;
+}
+h2{
+	color:white;
+
+}
+.checkboxes{
+	display:flex;
+	align-items:center;
+	justify-content: space-around;
+}
+#submit{
+	background-color: rgb(61,61,80);
+	color:#fff;
+	outline:none;
+}
+.outer {
+	display: flex;
+	justify-content: space-around;
+}
+h2 {
+	color: #fff;
+}
+.left {
+	width: 30%;
+}
+.right {
+	width: 60%;
+}
+input {
+	padding: 5px;
+	margin: 10px 0px 10px 20px;
+	border-radius: 5px;
+	outline: none;
+}
+select {
+	padding: 5px;
+	margin: 10px 0px 10px 20px;
+}
+.checkboxes {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+#submit {
+	background-color: rgb(61, 61, 80);
+	color: white;
+	outline: none;
+	font-size:1.4rem;
+    letter-spacing: 2px;
+	border-radius: 5px;
+	display:block;
+	padding:10px 12px;
+
+}
+#submit:hover{
+	background-color: rgb(62, 62, 90);
+}
+.padding {
+	padding: 0 20px;
+}
+#centers {
+	margin-left: 20px;
+}
+
